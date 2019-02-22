@@ -17,7 +17,7 @@ public class DatabaseService {
     private static IFeedbackDao feedbackDao;
 
     static {
-        DBI dbi = new DBI("jdbc:mysql://localhost:3306/missing_person?useSSL=false", "root", "Batu.1128");
+        DBI dbi = new DBI("jdbc:mysql://localhost:3306/missing_person?useSSL=false", "root", "password");
 
         DatabaseService.userDao = dbi.onDemand(IUserDao.class);
         DatabaseService.missedPersonDao = dbi.onDemand(IMissedPersonDao.class);
